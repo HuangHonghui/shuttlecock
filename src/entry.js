@@ -4,4 +4,4 @@
 var tabs = require('./tabs');
 
 tabs();
-tabs({el:'#tabs2'});
+tabs({el:'#tabs2',eventType:'mouseenter'});
