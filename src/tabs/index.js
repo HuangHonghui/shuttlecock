@@ -31,8 +31,9 @@ var tabs = function(options){
     [].slice.call(tabTitle).forEach(function(item,i){
 
         item.addEventListener(opts.eventType,function(e){
-            var thisParent = e.target.parentNode;
-            var targetContent = e.target.getAttribute('data-target');
+
+            var thisParent = e.currentTarget.parentNode;
+            var targetContent = e.currentTarget.getAttribute('data-target');
 
             // add class and remove class
             var currentActiveTitle = thisParent.querySelector(opts.tabTitle+"."+opts.activeClass);

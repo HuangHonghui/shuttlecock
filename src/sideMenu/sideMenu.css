@@ -1,0 +1,21 @@
+.sideMenu{
+    width: 300px;
+    border: 1px solid #dddddd;
+}
+.menuTitle{
+    list-style: none;
+    border: 1px solid #ff5500;
+}
+.menuTitle >a{
+    display: block;
+}
+.menuTitle.active > a{
+    background-color: #ff5500;
+}
+.subMenu{
+    display: none;
+}
+
+.menuTitle.open .subMenu{
+    display: block;
+}
